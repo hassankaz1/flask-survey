@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+<h1>Home Page</h1>
+
+<div id="instructions">
+    <h2>YOUR FIRST SURVEY</h2>
+    <h3>Satisfaction Survey</h3>
+    <h4>Instructions</h4>
+    <ul>
+        <li>On Clicking Submit You Will Start Taking the Survery</li>
+        <li>You will be shown one question at a time</li>
+        <li>Upon submitting a response to an question you will be redirected to the next question</li>
+        <li>This will happen until the end of the survey where you will be told you are done with the survey</li>
+        <li>Thank you! You may begin</li>
+    </ul>
+</div>
+
+<form action="/questions/0">
+    <button>Submit</button>
+</form>
+
+
+
+{% endblock %}
